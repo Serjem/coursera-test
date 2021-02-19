@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cafeteria Menu</title>
+
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 5;
+  padding: 5;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.75em;
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+#menubox {
+  background-color: gray;
+  margin: 10px;
+  border: 2px solid black;
+  color: black;
+  padding: 5px;
+  position: relative;
+  text-align: left;
+}
+
+.menutitle {
+  width: 100px;
+  height: 25px;
+  border: 2px solid black;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#menutitle1 {
+  background-color: pink;
+  color: black; 
+}
+
+#menutitle2 {
+  background-color: red;
+  color: white;
+}
+
+#menutitle3 {
+  background-color: yellow;
+  color: black;
+}
+
+.menudescription {
+  position: relative;
+  top: 10px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) { 
+  .col-lg-4 {
+    float: left;
+    width: 30%;
+    height: 300px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 45%;
+    float: left;
+    height: 250px;
+  }
+
+  .col-md-1 {
+    width: 92%;
+    float: left;
+    border-left: 10px;
+    height: 250px;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-1 {
+    width: 90%;
+    float: left;
+    height: 200px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+  <h1>Our Menu</h1>
+  <div class="row">
+    <div id="menubox" class="col-lg-4 col-md-6 col-sm-1">
+      <p id="menutitle1" class="menutitle">Chicken</p>
+      <p class="menudescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
+    </div>
+    <div id="menubox" class="col-lg-4 col-md-6 col-sm-1">
+      <p id="menutitle2" class="menutitle">Beef</p>
+      <p class="menudescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
+    </div>
+    <div id="menubox" class="col-lg-4 col-md-1 col-sm-1">
+      <p id="menutitle3" class="menutitle">Sushi</p>
+      <p class="menudescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
+    </div>
+  </div>
+</body>
+</html>

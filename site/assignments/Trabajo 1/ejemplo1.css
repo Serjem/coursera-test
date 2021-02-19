@@ -1,0 +1,90 @@
+/********** Base styles **********/
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+   body {
+      font-family: Arial, Helvetica, sans-serif; 
+    }
+  
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+#box {
+  border: 1px solid black;
+  background-color: grey;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+
+h1 {
+  font-size: 1.75em;
+  text-align: center;
+  margin: 20px;
+}
+
+.title {
+  border: 1px solid black;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25em;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: pink;
+  color: black;
+}
+
+.title2 {
+  background-color: red;
+  color: white;
+}
+
+.title3 {
+  background-color: yellow;
+  color: black;
+}
+
+/********** Desktops **********/
+
+@media (min-width: 992px) {
+
+.col-desktop-4 {
+    width: 30%;
+    float: left;
+    border: 5px dashed yellow;
+    }
+}
+/********** Tablets **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-tablet-6 {
+    width: 44%;
+    float: left;
+    border: 5px solid red;
+  }
+
+  .col-tablet-1 {
+    width: 90%;
+    float: left;
+    border: 5px solid red;
+  }
+}
+/********** Phones **********/
+
+@media (max-width: 767px) {
+  .col-phone-1 {
+    width: 96%;
+    float: left;
+    border: 5px solid black;
+  }
+}
