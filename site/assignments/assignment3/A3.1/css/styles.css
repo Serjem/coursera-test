@@ -1,0 +1,124 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  border-radius: 0;
+  border: 2px solid black;
+  height: 100px;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+    text-align: center;
+    color: red;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+/* END HEADER */
+
+/* Main content */
+.row {
+  margin-bottom: 15px; 
+}
+
+.menu-item-tile {
+  /*border: 2px solid red;*/
+  background-color: white ;
+}
+
+#menu-title {
+  margin: 20px 0 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+h3.menu-item-title {
+  color: black;
+  background-color: white;
+}
+
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+  margin: 10Px 30px 20px 30px;
+  border: 2px solid black;
+  background-color: gray;
+  padding: 5px 10Px 5px 10Px;
+}
+/* End Manin Conter */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav div { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  /* End Header */
+}
